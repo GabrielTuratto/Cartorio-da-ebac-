@@ -139,7 +139,7 @@
 	            printf("\t1 - registrar nomes\n");
 	            printf("\t2 - consultar  nomes\n");
 	            printf("\t3 - deletar nomes\n\n");
-	            printf("     Essa interface é de uso exclusivo da EBAC\n"); // Fim da selecao.
+	            printf("\t4 - Deseja sair do sistema\n\n"); // Fim da selecao.
 	
               	scanf("\%d", &opcao);// Armazenamento de dados.
 	
@@ -159,6 +159,11 @@
 	       case 3:
 	       deletar();
 	       break;
+	       
+	       case 4:
+	       printf("Obrigado por utilizar nosso sistema!\n");
+		   return 0;
+		   break;
 	        
 	       default:
 	         printf("Esta opcao não está disponivel, tente novamente\n");
